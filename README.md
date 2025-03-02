@@ -1,17 +1,20 @@
-📌 YunaAI-iOS – AI-Powered Assistant for macOS & iOS
-🚀 Version: Alpha 1.0
-🛠 Status: Active Development
+# YunaAI-iOS – AI-Powered Assistant for macOS & iOS
+## Version: Alpha 1.0
+## Status: Active Development
 
-📜 About YunaAI
+## 📜 About YunaAI
+
 YunaAI is a Swift-powered AI assistant for macOS and iOS that leverages local AI processing and memory recall to provide an interactive and personalized experience.
 
-📌 Features (Current & Planned)
+## Features (Current & Planned)
+
 ✅ Conversational AI – Yuna can answer questions and assist with tasks.
 ✅ Memory Recall System – Remembers previous interactions for a personalized experience.
 ✅ Markdown-Supported Chat UI – Displays formatted AI responses with bold text, bullet points, and emojis.
 ✅ Emoji Picker Integration – Allows users to add emojis easily in messages.
 🔄 Live API Communication – Uses an integrated backend for AI chat and memory storage.
-🔜 Upcoming Features:
+
+## 🔜 Upcoming Features:
 
 🌐 WebSockets for Real-Time AI Streaming Responses
 🎙️ Voice Input Support
@@ -23,11 +26,13 @@ YunaAI is a Swift-powered AI assistant for macOS and iOS that leverages local AI
 ✅ API /chat is working and fetching AI responses.
 ✅ Memory storage via /update_yuna_memory is now working.
 ✅ Memory retrieval via /fetch_yuna_memory is fully functional.
-🔄 Next Steps:
+
+## 🔄 Next Steps:
 
 UI enhancements (animations, chat bubble refinements).
 Finalizing error handling & API request optimizations.
-📍 Development Roadmap
+
+## 📍 Development Roadmap
 Phase	Features	Status
 Phase 1	Chat UI, API Integration, Memory System	✅ Completed
 Phase 2	UI/UX Enhancements, Animations, Dark Mode	🚀 In Progress
