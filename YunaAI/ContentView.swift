@@ -4,7 +4,7 @@ struct ContentView: View {
     @State private var userMessage: String = ""
     @State private var chatResponse: String = "Ask Yuna something..."
     @State private var memory: [String] = []
-
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -30,7 +30,7 @@ struct ContentView: View {
                 TextField("Type a message...", text: $userMessage)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
-
+                
                 Button(action: sendMessage) {
                     Image(systemName: "paperplane.fill")
                         .foregroundColor(.white)
@@ -60,19 +60,22 @@ struct ContentView: View {
             }
         }
     }
-
+    
     func loadMemory() async {
+        print("🔍 loadMemory() function triggered!")
         do {
             memory = try await APIManager.shared.fetchMemory()
+            print("✅ Memory loaded successfully!")
         } catch {
+            print("❌ Error loading memory: \(error.localizedDescription)")
             memory = ["Error loading memory"]
         }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
+    
 }
-
